@@ -1,0 +1,3276 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        
+
+        
+            <link rel="stylesheet" href="styles/main.css">
+        
+    </head>
+    <body>
+        <header class="header">
+    <div class="header__wrap">
+        <button class="header__burger js-header-burger" aria-label="Menu Button">
+            <span class="header__burger-line1"></span>
+            <span class="header__burger-line2"></span>
+            <span class="header__burger-line3"></span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#" class="header__list-link">новые Авто в наличии</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">корпоративным клиентам</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">акции сервиса</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">Авто с пробегом в наличии</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__support">
+            <strong> 5 лет</strong>
+            <span>поддержки</span>
+
+            <div class="header__info">
+                <div class="header__info-title">5 лет поддержки</div>
+                <div class="header__info-desc">
+                    <p>
+                        Полная уверенность в наших автомобилях, 
+                        а также высокое качество производства и компонентов позволяет нам гарантировать 5 лет поддержки для вашего автомобиля HAVAL
+                    </p>
+                    <p>
+                        2 года постгарантийного обслуживания
+                    </p>
+                    <p>
+                        3 года гарантии
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header__contacts">
+            <div class="header__contacts-item">
+                <div class="header__contacts-row">
+                    <div class="header__contacts-text">Haval авторусь Подольск </div>
+                    <span class="header__contacts-icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#plus-circle"></use>
+                        </svg>
+                    </span>
+                </div>
+                <a href="tel:+7(495)492-09-45" class="header__contacts-tel">+7 (495) 492-09-45</a>
+
+                <div class="header__contacts-address">
+                    <span>Адрес</span>
+                    <p>
+                        Подольск, проспект Юных Ленинцев, д. 1И, МЦД Селикатная
+                    </p>
+                </div>
+            </div>
+            <div class="header__contacts-item">
+                <div class="header__contacts-row">
+                    <div class="header__contacts-text">Haval авторусь Лосиный остров</div>
+                    <span class="header__contacts-icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#plus-circle"></use>
+                        </svg>
+                    </span>
+                </div>
+                <a href="tel:+7(495)492-08-90" class="header__contacts-tel">+7 (495) 492-08-90</a>
+
+                <div class="header__contacts-address">
+                    <span>Адрес</span>
+                    <p>
+                        Москва, Ярославское ш, владение 2 В, строение 3 (95 км МКАД)
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="header__pin">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#pin"></use>
+                </svg>
+            </a>
+            <a href="/" class="header__logo">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="header__menu  js-header-menu">
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__list-item">
+                <a href="#" class="header__list-link">
+                    <span>новые Авто в наличии</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="header__list-item">
+                <a href="#" class="header__list-link">
+                    <span>корпоративным клиентам</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="header__list-item">
+                <a href="#" class="header__list-link">
+                    <span>акции сервиса</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="header__list-item">
+                <a href="#" class="header__list-link">
+                    <span>Авто с пробегом в наличии</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="header__list-item">
+                <a href="#" class="header__list-link">
+                    <span>контакты</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header__support">
+        <div class="header__support-flex">
+            <div class="header__support-text">
+                <strong> 5 лет</strong>
+                <span>поддержки</span>
+            </div>
+            <div class="header__support-icon">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="header__info">
+            <div class="header__info-title">5 лет поддержки</div>
+            <div class="header__info-desc">
+                <p>
+                    Полная уверенность в наших автомобилях, 
+                    а также высокое качество производства и компонентов позволяет нам гарантировать 5 лет поддержки для вашего автомобиля HAVAL
+                </p>
+                <p>
+                    2 года постгарантийного обслуживания
+                </p>
+                <p>
+                    3 года гарантии
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="header__contacts">
+        <div class="header__contacts-item">
+            <div class="header__contacts-text">Haval авторусь Подольск </div>
+            <div class="header__contacts-address">
+                <p>
+                    Подольск, проспект Юных Ленинцев, д. 1И, МЦД Селикатная
+                </p>
+            </div>
+            <a href="tel:+7(495)492-09-45" class="header__contacts-tel">+7 (495) 492-09-45</a>
+        </div>
+
+        <div class="header__contacts-item">
+            <div class="header__contacts-text">Haval авторусь Лосиный остров</div>
+            <div class="header__contacts-address">
+                <p>
+                    Москва, Ярославское ш, владение 2 В, строение 3 (95 км МКАД)
+                </p>
+            </div>
+            <a href="tel:+7(495)492-08-90" class="header__contacts-tel">+7 (495) 492-08-90</a>
+        </div>
+    </div>
+</div>
+</header>
+
+<main class="main">
+
+    <section class="intro">
+    <div class="intro__img">
+        <picture>
+            <source media="(min-width: 576px)" srcset="./img/content/intro/img_01.webp" type="image/webp">
+            <img src="./img/content/intro/img_01_mob.webp" alt="" width="1920" height="1080">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="intro__content">
+            <div class="intro__suptitle">месяц</div>
+            <h1 class="intro__title"> Haval M6 <br>и Dargo </h1>
+            <p class="intro__text">
+                Зимняя резина в подарок, <br> кредит от 0.01%, выгода <br>200 000 ₽
+            </p>
+            <button class="btn intro__btn js-fancy" data-src="#benefit">
+                оставить заявку
+            </button>
+
+        </div>
+    </div>
+</section>
+
+    <div class="services">
+    <div class="container">
+        <div class="services__wrap">
+            <button class="services__item js-fancy" data-src="#benefit">
+                <span class="services__icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#search-icon"></use>
+                    </svg>
+                </span>
+                <span class="services__text">
+                    <span>оцени автомобиль</span> 
+                    <span>и получи выгоду</span>
+                </span>
+            </button>
+            <button class="services__item js-fancy" data-src="#benefit">
+                <span class="services__icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#sale-icon"></use>
+                    </svg>
+                </span>
+                <span class="services__text">
+                    <span>спецпредложения</span> 
+                    <span>месяца</span>
+                </span>
+            </button>
+            <button class="services__item js-fancy" data-src="#credit">
+                <span class="services__icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#credit-card"></use>
+                    </svg>
+                </span>
+                <span class="services__text">
+                    <span>рассчитать</span>
+                    <span>кредит</span>
+                </span>
+            </button>
+            <button class="services__item js-fancy" data-src="#service">
+                <span class="services__icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#settings-icon"></use>
+                    </svg>
+                </span>
+                <span class="services__text">
+                    <span>записаться</span>
+                    <span>на сервис</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <section class="model">
+    <div class="container">
+        <h2 class="model__title">модели HAVAL</h2>
+
+
+        <div class="model__wrap">
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval jolion</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite,</li>
+                            <li class="model__configuration-list-item">Premium,</li>
+                            <li class="model__configuration-list-item">Tech plus</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/1.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval m6</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite,</li>
+                            <li class="model__configuration-list-item">Premium,</li>
+                            <li class="model__configuration-list-item">Tech plus</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/2.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval F7</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite,</li>
+                            <li class="model__configuration-list-item">Premium,</li>
+                            <li class="model__configuration-list-item">Tech plus</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/3.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval F7x</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite,</li>
+                            <li class="model__configuration-list-item">Premium,</li>
+                            <li class="model__configuration-list-item">Tech plus</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/4.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval dargo</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Elite 4wd, </li>
+                            <li class="model__configuration-list-item">Premium 4wd</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/5.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval Poer <br> King Kong</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/6.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval dargo X</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Elite</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/7.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="model__item">
+                <div class="model__left">
+                    <div class="model__name">Haval Poer</div>
+
+                    <div class="model__configuration">
+                        <div class="model__configuration-text">Доступные комплектации</div>
+
+                        <ul class="model__configuration-list">
+                            <li class="model__configuration-list-item">Comfort,</li>
+                            <li class="model__configuration-list-item">Premium</li>
+                        </ul>
+
+                        <button class="model__configuration-btn js-fancy" data-src="#configuration">
+                            <span>О комплектациях</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="model__img">
+                    <picture>
+                        <img src="./img/content/model/8.webp" alt="" loading="lazy" width="636" height="358">
+                    </picture>
+                </div>
+
+                <div class="model__right">
+                    <button class="btn model__choose-btn js-fancy" data-src="#benefit">выбрать автомобиль</button>
+                    <button class="btn btn_black model__price-btn js-fancy" data-src="#benefit">узнать цену</button>
+                    <button class="model__test-drive js-fancy" data-src="#test-drive">
+                        <span>Записаться на тест-драйв</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="stock">
+    <div class="container">
+        <h2 class="stock__title">Автомобили в наличии</h2>
+
+
+        <div class="stock__wrap">
+            <form class="stock__form">
+                <div class="stock__filter">
+                    <label class="stock__filter-item">
+                        <select class="stock__select select js-select" name="model" data-placeholder="Выберите модель" required>
+                            <option></option>
+                            <option value="Модель1">Модель1</option>
+                            <option value="Модель2">Модель2</option>
+                            <option value="Модель3">Модель3</option>
+                            <option value="Модель4">Модель4</option>
+                        </select>
+                    </label>
+                    <label class="stock__filter-item">
+                        <select class="stock__select select js-select" name="equipment" data-placeholder="Комплектация" required>
+                            <option></option>
+                            <option value="Комплектация1">Комплектация1</option>
+                            <option value="Комплектация2">Комплектацияь2</option>
+                            <option value="Комплектация3">Комплектация3</option>
+                            <option value="Комплектация4">Комплектация4</option>
+                        </select>
+                    </label>
+                    <label class="stock__filter-item">
+
+                        <select class="stock__select select js-select" name="engine" data-placeholder="Двигатель" required>
+                            <option></option>
+                            <option value="Двигатель1">Двигатель1</option>
+                            <option value="Двигатель2">Двигатель2</option>
+                            <option value="Двигатель3">Двигатель3</option>
+                            <option value="Двигатель4">Двигатель4</option>
+                        </select>
+                    </label>
+                    <div class="stock__filter-item">
+                        <button class="btn btn_black stock__filter-button js-fancy" data-src="#credit">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#sale-icon"></use>
+                            </svg>
+                            <span>в кредит</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="stock__row">
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+                <div class="card stock__card">
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#car"></use>
+                                    </svg>
+                                    <span>Комплектация</span>
+                                </span> 
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#engine"></use>
+                                    </svg>
+                                    <span>Двигатель</span>
+                                </span> 
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item">
+                                <span class="card__list-key">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#drive-unit"></use>
+                                    </svg>
+                                    <span>Привод</span>
+                                </span> 
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn card__btn js-fancy" data-src="#benefit">Получить лучшую цену</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="stock__link">
+                <span>Смотреть еще</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="offers">
+    <div class="container">
+        <h2 class="offers__title">спецпредложения</h2>
+
+        <div class="offers__wrap">
+            <div class="offers__tabs">
+                <ul class="offers__tabs-list">
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval jolion</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval m6</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval F7</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button offers__tabs-button_active">Haval F7X</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval dargo</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval Poer King Kong</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval dargo X</button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval Poer </button></li>
+                    <li class="offers__tabs-item"><button class="offers__tabs-button">Haval Poer </button></li>
+                </ul>
+            </div>
+
+            <div class="offers__row">
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+                <div class="card offers__card">
+                    <span class="card__badge">горячее предложение</span>
+                    <div class="card__img">
+                        <picture>
+                            <img src="./img/content/card/01.webp" alt="" loading="lazy" width="328" height="210">
+                        </picture>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">Haval F7X</div>
+                        <ul class="card__list">
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Комплектация</span>
+                                <span class="card__list-val">Elite</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Двигатель</span>
+                                <span class="card__list-val">1.5 DCT (150 л.с.)</span>
+                            </li>
+                            <li class="card__list-item card__list-item_border">
+                                <span class="card__list-key">Привод</span>
+                                <span class="card__list-val">2 WD</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn_black card__btn js-fancy" data-src="#benefit">подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="offers__link">
+                <span>Смотреть еще</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="promotions">
+    <div class="container">
+        <h2 class="promotions__title">сервисные акции</h2>
+
+        <div class="promotions__head">
+            <div class="promotions__nav">
+                <button class="promotions__nav-btn js-slider-prev" aria-label="Slider Button">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-prev"></use>
+                    </svg>
+                </button>
+                <button class="promotions__nav-btn js-slider-next" aria-label="Slider Button">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-next"></use>
+                    </svg>
+                </button>
+            </div>
+
+
+            <a href="#" class="promotions__link">
+                <span>Записаться на сервис</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="promotions__slider js-promotions-slider">
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__img">
+                        <picture>
+                            <img src="./img/content/promotions/01.webp" alt="" loading="lazy" width="487" height="225">
+                        </picture>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__img">
+                        <picture>
+                            <img src="./img/content/promotions/02.webp" alt="" loading="lazy" width="487" height="225">
+                        </picture>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__content">
+                        <div class="promotions__content-title">Срок действия акции с 01.10.2023 до 29.02.2024</div>
+                        <p class="promotions__content-text">
+                            *Акция действует только в дилерском центре HAVAL Авторусь Подольск. Предложение ограничено. Выгоды по акциям не суммируются. Информация носит справочный характер и не является публичной офертой. Всю дополнительную информацию, а также ответы на оставшиеся вопросы вы можете получить у сотрудников сервиса HAVAL АВТОРУСЬ*
+                        </p>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__img">
+                        <picture>
+                            <img src="./img/content/promotions/01.webp" alt="" loading="lazy" width="487" height="225">
+                        </picture>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__img">
+                        <picture>
+                            <img src="./img/content/promotions/02.webp" alt="" loading="lazy" width="487" height="225">
+                        </picture>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promotions__item">
+                <div class="promotions__body">
+                    <div class="promotions__content">
+                        <div class="promotions__content-title">Срок действия акции с 01.10.2023 до 29.02.2024</div>
+                        <p class="promotions__content-text">
+                            *Акция действует только в дилерском центре HAVAL Авторусь Подольск. Предложение ограничено. Выгоды по акциям не суммируются. Информация носит справочный характер и не является публичной офертой. Всю дополнительную информацию, а также ответы на оставшиеся вопросы вы можете получить у сотрудников сервиса HAVAL АВТОРУСЬ*
+                        </p>
+                    </div>
+                </div>
+                <div class="promotions__bottom">
+                    <span class="promotions__icon">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#info-icon"></use>
+                        </svg>
+                    </span>
+
+                    <a href="#stock" class="promotions__bottom-link js-fancy">
+                        <span>Подробнее об акции</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section class="benefits">
+    <div class="benefits__img">
+        <picture>
+            <source media="(min-width: 576px)" srcset="./img/content/benefits/img_01.webp" type="image/webp">
+            <img src="./img/content/benefits/img_01_mob.webp" alt="" loading="lazy" width="1920" height="1080">
+        </picture>
+    </div>
+
+    <div class="container">
+        <div class="benefits__wrap">
+            <h2 class="benefits__title">Преимущества</h2>
+            <div class="benefits__row">
+                <div class="benefits__item">
+                    <span class="benefits__number">01 /</span>
+                    <div class="benefits__item-title">приятно</div>
+                    <span class="benefits__item-text">
+                        Удобное местоположение <br> с бесплатной парковкой
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">02 /</span>
+                    <div class="benefits__item-title">Быстро</div>
+                    <span class="benefits__item-text">
+                        Покупка автомобиля <br> одним днем
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">03 /</span>
+                    <div class="benefits__item-title">впечатляюще</div>
+                    <span class="benefits__item-text">
+                        Яркий и динамичный <br> тест-драйв
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">04 /</span>
+                    <div class="benefits__item-title">безопасно</div>
+                    <span class="benefits__item-text">
+                        Официальная <br> гарантия
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">05 /</span>
+                    <div class="benefits__item-title">професионально</div>
+                    <span class="benefits__item-text">
+                        Удобное местоположение <br> с бесплатной парковкой
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">06 /</span>
+                    <div class="benefits__item-title">удобно</div>
+                    <span class="benefits__item-text">
+                        Оплата банковской <br> картой
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">07 /</span>
+                    <div class="benefits__item-title">надежно</div>
+                    <span class="benefits__item-text">
+                        Тёплый склад <br> автомобилей
+                    </span>
+                </div>
+                <div class="benefits__item">
+                    <span class="benefits__number">08 /</span>
+                    <div class="benefits__item-title">выгодно</div>
+                    <span class="benefits__item-text">
+                        Выгодный <br> Trade-In
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="contacts">
+
+    <div class="contacts__map js-contacts-map" id="ymap"></div>
+
+    <div class="container">
+        <div class="contacts__wrap">
+            <div class="contacts__block">
+                <span class="contacts__block-icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#vector"></use>
+                    </svg>
+                </span>
+                <div class="contacts__block-title">haval Авторусь  подольск</div>
+                
+                <div class="contacts__block-address">Подольск, проспект Юных Ленинцев, д. <br> 1И, МЦД Селикатная</div>
+
+                <div class="contacts__item">
+                    <a href="tel:+7(495)492-09-45" class="contacts__tel">+7 (495) 492-09-45</a>
+                    <a href="mailto:info-los@haval-avtoruss.ru" class="contacts__mail">info-los@haval-avtoruss.ru</a>
+                </div>
+            </div>
+            <div class="contacts__block">
+                <span class="contacts__block-icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#vector"></use>
+                    </svg>
+                </span>
+                <div class="contacts__block-title">haval Авторусь  лосиный <br> остров</div>
+                
+                <div class="contacts__block-address">Москва, Ярославское ш., владение 2В, <br> строение 3 (95 км МКАД)</div>
+
+                <div class="contacts__flex">
+                    <div class="contacts__col">
+                        <div class="contacts__item">
+                            <a href="tel:+7(495)432-59-97" class="contacts__tel">+7 (495) 432-59-97</a>
+                            <a href="mailto:info-los@haval-avtoruss.ru" class="contacts__mail">info-los@haval-avtoruss.ru</a>
+                        </div>
+
+                        <div class="contacts__item">
+                            <a href="mailto:dealer.haval-avtoruss.ru" class="contacts__mail">dealer.haval-avtoruss.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__col">
+                        <div class="contacts__item">
+                            <span>Отдел продаж</span>
+                            <span>ежедневно 9—21</span>
+                        </div>
+
+                        <div class="contacts__item">
+                            <span>Сервис</span>
+                            <span>ежедневно 8—21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__left">
+                <div class="footer__left-title">Юридическая информация</div>
+                <p class="footer__left-text">
+                    <span>ООО "АВТОРУСЬ Н"</span>
+                    <span>ИНН 5036130725 / ОГРН 1135074006022</span>
+                    <span>Юридический адрес: 142111, Московская обл, Подольск г, <br>Юных Ленинцев пр-кт, дом №1</span>
+                    <span>Тел./факс: <a href="tel:+7(495)276-87-77">+7 (495) 276-87-77</a></span>
+                </p>
+            </div>
+            <div class="footer__right">
+                <div class="footer__flex">
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#vkontakte"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer__apps">
+                        <a href="#" class="footer__apps-item" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#app-store"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__apps-item" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#google-play"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__qrcode">
+                    <picture>
+                        <img src="./img/qr.png" alt="" loading="lazy" width="130" height="130"> 
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrap">
+            <div class="footer__top js-footer-accordion">
+                <div class="footer__top-title">Подробнее об условиях акции</div>
+                <span class="footer__top-icon">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-up"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-text">
+                    <p>
+                        *Стоимость автомобилей указана в базовой комплектации.
+                    </p>
+                    <p>
+                        Максимальная выгода достигается за счет скидки на модели HAVAL при покупке автомобиля по программе Trade-in и кредит с учетом 
+                        дополнительной выгоды от дилерских центров HAVAL Авторусь Подольск и HAVAL Авторусь Лосиный Остров. 
+                        Подробности спецпредложения в отделе продаж ООО «АВТОРУСЬ Н».
+                    </p>
+                    <p>
+                        Данный интернет-сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ. 
+                        Для получения подробной информации обращайтесь в официальный дилерский центр автомобилей Haval ООО «АВТОРУСЬ Н» или по телефону: +7 (495) 032-52-97. 
+                        Специальное предложение действует на покупку нового автомобиля с 01.11.2023 по 29.02.2024.
+                    </p>
+                    <p>
+    
+                        ** Предложение по тарифному плану «Оптимальный» распространяется на новые автомобили Бренда HAVAL модели JOLION, М6, F7, F7x, DARGO, H9. 
+                        Указанная процентная ставка по кредиту 0,01% годовых достигается при следующих условиях кредитования: первоначальный взнос от 60% и не более 90% от стоимости автомобиля, 
+                        сумма кредита от 100 000 руб. до 6 000 000 руб., срок кредитования 12 мес. Условия по кредиту и тарифы могут быть изменены Банком в одностороннем порядке. 
+                        Банк вправе отказать в выдаче автокредита. Обеспечение по кредиту — залог приобретаемого автомобиля. Страхование по КАСКО HAVAL Insurance. 
+                        Условия кредитования актуальны на 01.09.2023 г., подробнее уточняйте в официальных дилерских центрах HAVAL. Предложение носит информационный характер, 
+                        не является публичной офертой. Кредит предоставляется ООО «Драйв Клик Банк» ИНН 6452010742, ОГРН 1027739664260, место нахождения: 125124 г. Москва, ул. Правды, д. 26. Лицензия Банка России № 2168 (бессрочная) от 09.12.2022.
+                    </p>
+                </div>
+               
+            </div>
+        </div>
+        <p class="footer__policy">
+            Этот сайт защищен reCAPTCHA, и к нему применяются <a href="#">политика конфиденциальности</a>  Google и  <a href="#">условия предоставления услуг</a>
+        </p>
+    </div>
+</footer>
+        <div class="modal">
+
+    <div class="modal modal_services" id="benefit">
+    <div class="modal__box">
+        <div class="modal__box-title">Получите дополнительную выгоду</div>
+        <p class="modal__box-text">Пожалуйста, введите Ваш номер телефона</p>
+
+        <form class="modal__form">
+            <label class="modal__form-label">
+                <input type="tel" name="phone" class="modal__form-input js-phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="modal__form-label">
+                <select class="modal__form-select select js-select" name="dealer" data-placeholder="Дилерский центр" required>
+                    <option></option>
+                    <option value="Дилерский центр1">Дилерский центр1</option>
+                    <option value="Дилерский центр2">Дилерский центр2</option>
+                    <option value="Дилерский центр3">Дилерский центр3</option>
+                    <option value="Дилерский центр4">Дилерский центр4</option>
+                </select>
+            </label>
+
+            <label class="modal__form-label">
+                <input type="checkbox">
+                <span class="modal__form-mark">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check-icon"></use>
+                    </svg>
+                </span>
+                <span class="modal__form-policy">Я даю согласен с <a href="#">условиями обработки</a> персональных данных.</span>
+            </label>
+
+            <button class="btn modal__form-btn">Получить  выгоду</button>
+        </form>
+    </div>
+</div>
+
+    <div class="modal modal_services" id="offer">
+    <div class="modal__box">
+        <div class="modal__box-title">получить предложение для корпоративных клиентов</div>
+        <p class="modal__box-text">Пожалуйста, введите Ваш номер телефона</p>
+
+        <form class="modal__form">
+            <label class="modal__form-label">
+                <input type="tel" name="phone" class="modal__form-input js-phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="modal__form-label">
+                <select class="modal__form-select select js-select" name="dealer" data-placeholder="Дилерский центр" required>
+                    <option></option>
+                    <option value="Дилерский центр1">Дилерский центр1</option>
+                    <option value="Дилерский центр2">Дилерский центр2</option>
+                    <option value="Дилерский центр3">Дилерский центр3</option>
+                    <option value="Дилерский центр4">Дилерский центр4</option>
+                </select>
+            </label>
+
+            <label class="modal__form-label">
+                <input type="checkbox">
+                <span class="modal__form-mark">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check-icon"></use>
+                    </svg>
+                </span>
+                <span class="modal__form-policy">Я даю согласен с <a href="#">условиями обработки</a> персональных данных.</span>
+            </label>
+
+            <button class="btn modal__form-btn">получить предложение</button>
+        </form>
+    </div>
+</div>
+    
+    <div class="modal modal_services" id="credit">
+    <div class="modal__box">
+        <div class="modal__box-title">Рассчитать кредит</div>
+        <p class="modal__box-text">Пожалуйста, введите Ваш номер телефона</p>
+
+        <form class="modal__form">
+            <label class="modal__form-label">
+                <input type="tel" name="phone" class="modal__form-input js-phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="modal__form-label">
+                <select class="modal__form-select select js-select" name="dealer" data-placeholder="Дилерский центр" required>
+                    <option></option>
+                    <option value="Дилерский центр1">Дилерский центр1</option>
+                    <option value="Дилерский центр2">Дилерский центр2</option>
+                    <option value="Дилерский центр3">Дилерский центр3</option>
+                    <option value="Дилерский центр4">Дилерский центр4</option>
+                </select>
+            </label>
+
+            <label class="modal__form-label">
+                <input type="checkbox">
+                <span class="modal__form-mark">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check-icon"></use>
+                    </svg>
+                </span>
+                <span class="modal__form-policy">Я даю согласен с <a href="#">условиями обработки</a> персональных данных.</span>
+            </label>
+
+            <button class="btn modal__form-btn">Получить  выгоду</button>
+        </form>
+    </div>
+</div>
+
+    <div class="modal modal_services" id="service">
+    <div class="modal__box">
+        <div class="modal__box-title">Записаться на сервис</div>
+        <p class="modal__box-text">Пожалуйста, введите Ваш номер телефона</p>
+
+        <form class="modal__form">
+            <label class="modal__form-label">
+                <input type="tel" name="phone" class="modal__form-input js-phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="modal__form-label">
+                <select class="modal__form-select select js-select" name="dealer" data-placeholder="Дилерский центр" required>
+                    <option></option>
+                    <option value="Дилерский центр1">Дилерский центр1</option>
+                    <option value="Дилерский центр2">Дилерский центр2</option>
+                    <option value="Дилерский центр3">Дилерский центр3</option>
+                    <option value="Дилерский центр4">Дилерский центр4</option>
+                </select>
+            </label>
+
+            <label class="modal__form-label">
+                <input type="checkbox">
+                <span class="modal__form-mark">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check-icon"></use>
+                    </svg>
+                </span>
+                <span class="modal__form-policy">Я даю согласен с <a href="#">условиями обработки</a> персональных данных.</span>
+            </label>
+
+            <button class="btn modal__form-btn">Записаться на сервис</button>
+        </form>
+    </div>
+</div>
+
+    <div class="modal modal_corporate" id="leasing">
+    <div class="modal__box">
+        <div class="modal__title">Специальная программа Haval Лизинг</div>
+        <p class="modal__text">
+            «<span>Haval</span> Лизинг» — это возможность для вашего бизнеса получить транспортные средства, 
+            необходимые для вашей компании, уже сейчас. Откройте для себя возможности долгосрочной аренды с 
+            возможностью выкупа с дополнительной выгодой в виде снижения розничной цены автомобиля.
+        </p>
+
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Преимущества «Haval Лизинг»</div>
+            <p class="modal__wrap-text">
+                Предлагаемые лизинговые программы настраиваются под потребности вашего бизнеса — вы выбираете условия финансирования, 
+                а мы снижаем размер лизинговых платежей:
+            </p>
+
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Авансовый платеж от 0%</p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Удорожание от 0%</p>
+                    </div>
+                </div>
+
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Выкупной платеж до 35%</p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Срок лизинга от 6 месяцев</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn modal__btn js-fancy" data-src="#offer">Получить предложение</button>
+    </div>
+</div>
+
+    <div class="modal modal_corporate" id="business">
+    <div class="modal__box">
+        <div class="modal__title">для бизнеса</div>
+        <p class="modal__text">
+            Автомобили <span>Haval</span> для Вашего бизнеса доступны по специальным программам на выгодных условиях. 
+            Стать корпоративным клиентом HAVAL можно при приобретении автомобиля юридическим лицом.
+        </p>
+
+        <div class="modal__row">
+            <div class="modal__col">
+                <div class="modal__item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                    </svg>
+                    <p>
+                        Специальные условия при приобретении в лизинг
+                    </p>
+                </div>
+
+                <div class="modal__item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                    </svg>
+                    <p>
+                        Автомобили HAVAL для Вашего бизнеса доступны по специальным программам на выгодных условиях. 
+                        Стать корпоративным клиентом HAVAL можно при приобретении автомобиля юридическим лицом.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal__col">
+                <div class="modal__item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                    </svg>
+                    <p>
+                        Бесплатная эвакуация автомобиля в ближайший официальный дилерский центр
+                    </p>
+                </div>
+
+                <div class="modal__item">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                    </svg>
+                    <p>
+                        Доставка в любой регион России
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Преимущества программы корпоративных продаж»</div>
+
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Парк тестовых автомобилей исключительно для корпоративных клиентов и долгосрочный тест-драйв%</p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Доступ к спектру финансовых и страховых программ</p>
+                    </div>
+                </div>
+
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Выгодные цены на покупку и обслуживание автомобилей HAVAL</p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>Ускоренная поставка автомобилей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Безупречный клиентский сервис»</div>
+
+            <p class="modal__wrap-text">
+                Каждый корпоративный клиент получает профессиональную своевременную поддержку.
+            </p>    
+
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Персональный менеджер <br> по продажам</strong>
+                            В задачи менеджера входит подбор выгодных условий и дополнительного оборудования, 
+                            оформление страховки и контроль за выполнением всех этапов заказа.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Высокое качество обслуживания</strong>
+                            Персонал, который работает с корпоративными клиентами, 
+                            проходит дополнительное обучение и сертификацию, а дилерские центры - постоянный аудит.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn modal__btn js-fancy" data-src="#offer">Получить предложение</button>
+    </div>
+</div>
+
+    
+<div class="modal modal_corporate" id="clients">
+    <div class="modal__box">
+        <div class="modal__title">Haval для крупных корпоративных клиентов </div>
+    
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Преимущества крупного заказа автомобилей HAVAL</div>
+            <p class="modal__wrap-text">
+                Каждый корпоративный клиент получает профессиональную своевременную поддержку.
+            </p>
+    
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+    
+                        <p>
+                            <strong>Широкий модельный ряд</strong>
+                            В автопарке HAVAL вы найдете модели, 
+                            подходящие именно для вашего бизнеса: от стильных городских кроссоверов до бескомпромиссных пикапов.
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Адаптированность к российским условиям</strong>
+                            Все автомобили HAVAL оснащены набором теплых опций, незаменимых при поездках в суровых погодных условиях.
+                        </p>
+                    </div>
+    
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Высокий уровень безопасности</strong>
+                            Высокоинтеллектуальные автомобили HAVAL оснащены набором систем активной и пассивной безопасности. 
+                            Любое действие на дороге будет под контролем умных систем HAVAL.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Современные автомобили</strong>
+                            При создании моделей HAVAL применены передовые достижения в области интеллектуальных технологий.
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Эффектный экстерьер и продуманная эргономика</strong>
+                            Стильные автомобили HAVAL обеспечат премиальный уровень комфорта как для водителя, так и для пассажиров.
+                        </p>
+                    </div>
+    
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            <strong>Персональный менеджер</strong>
+                            Выделенный менеджер для крупных корпоративных клиентов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Как стать крупным корпоративным клиентом HAVAL</div>
+            <p class="modal__wrap-text">
+                Вы можете воспользоваться всеми преимуществами крупного заказа автомобилей HAVAL, если:
+            </p>
+    
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+    
+                        <p> 
+                            Вы являетесь представительством международный компании
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p> 
+                            Вы являетесь лидером мнений или играете определяющую роль в своем регионе или сегменте рынка
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            Вы являетесь лидером в своем сегменте рынка
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            Ваша компания входит в ТОП-100 компаний РФ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="modal__wrap">
+            <div class="modal__wrap-title">Количественные стандарты для больших поставок <br> автомобилей HAVAL</div>
+            <p class="modal__wrap-text">
+                Узнайте больше о требованиях HAVAL к крупным корпоративным клиентам.
+            </p>
+    
+            <div class="modal__row">
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+    
+                        <p> 
+                            Разовая закупка от 20-30 автомобилей в зависимости от модели и региона
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p> 
+                            Клиент обладает профильным автопарком аналогичных или взаимозаменяемых моделей более 100 автомобилей
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="modal__col">
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            Закупка автомобилей небольшими партиями в течение календарного года
+                        </p>
+                    </div>
+                    <div class="modal__item">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#check"></use>
+                        </svg>
+                        <p>
+                            Более 30 автомобилей в год
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn modal__btn">Получить предложение</button>
+    </div>
+</div>
+
+
+    <div class="modal modal_corporate" id="price">
+    <div class="modal__box">
+        <div class="modal__title">Стоимость владения  Haval</div>
+
+
+        <div class="modal__table table">
+            <div class="table__nav js-table-nav">
+                <button class="table__nav-btn" data-dir="prev">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-prev"></use>
+                    </svg>
+                </button>
+                <button class="table__nav-btn" data-dir="next">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-next"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="table__wrap">
+                <div class="table__head">
+                    <div class="table__col table__col_small">
+                        <div class="table__label">Марка/модель</div>
+                    </div>
+                    <div class="table__col table__col_full">
+                        <div class="table__slider js-table-slider">
+                            <div class="table__item">
+                                <div class="table__item-title"> 
+                                    <span>Haval Jolion</span> 
+                                    <span>4*2 (143)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title"> 
+                                    <span>Haval Jolion</span>
+                                    <span>4*2 (150)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                    <span>Haval F7х</span>
+                                    <span> 4*4 (150)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                    <span>Haval F7х</span> 
+                                    <span>4*4 (190)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                    <span>Haval F7х</span>
+                                    <span> 4*4 (192)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                    <span>Haval F7х</span>
+                                    <span>4*4 (192)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                   <span> Haval F7х</span>
+                                   <span> 4*4 (192)</span>
+                                </div>
+                            </div>
+                            <div class="table__item">
+                                <div class="table__item-title">
+                                    <span>Haval F7х</span>
+                                    <span>4*4 (192)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table__params">
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Топливо </div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Зимние шины</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">ОСАГО</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Транспортный <br>налог</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Стоимость владения <br>за 5 лет</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Стоимость в мес.</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__col table__col_small">
+                            <div class="table__label">Стоимость <br>за 1 км пробега.</div>
+                        </div>
+
+                        <div class="table__col table__col_full">
+                            <div class="table__params-slider js-params-slider">
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                                <div class="table__param">
+                                    <div class="table__param-val">395 361 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table__text">* Цены действительны на 01.03.2023</div>
+        </div>
+        <button class="btn modal__btn">Получить предложение</button>
+    </div>
+</div>
+
+    <div class="modal modal_stock" id="stock">
+    <div class="modal__box">
+        <div class="modal__title">Подробнее о серверных акции </div>
+        <p class="modal__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id odio aperiam debitis ducimus perferendis 
+            sint eius et officia dolorum dicta aliquam modi culpa, dolor fuga consequatur ipsum facere at. Nobis?
+        </p>
+
+   
+
+        <button class="btn modal__btn js-fancy" data-src="#service">Записаться на сервис</button>
+    </div>
+</div>
+
+    <div class="modal modal_corporate" id="configuration">
+    <div class="modal__box js-modal-config">
+        <div class="modal__title">Комплектации</div>
+
+        <div class="modal__wrap">
+            <div class="modal__tabs">
+                <ul class="modal__tabs-list">
+                    <li class="modal__tabs-item"><button class="modal__tabs-btn modal__tabs-btn_active" data-tab="comfort">Comfort</button></li>
+                    <li class="modal__tabs-item"><button class="modal__tabs-btn" data-tab="elite">Elite</button></li>
+                    <li class="modal__tabs-item"><button class="modal__tabs-btn" data-tab="premium">Premium</button></li>
+                    <li class="modal__tabs-item"><button class="modal__tabs-btn" data-tab="tech-plus">Tech Plus</button></li>
+                </ul>
+            </div>
+            <div class="modal__main">
+                    
+                <div class="modal__accordion accordion is-active" data-content="comfort">
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">Экстерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">интерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">сиденья</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">свет и обзор</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">оборудование</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">безопасность</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">аудио и электронные системы</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">багажник и груз</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">колеса</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__accordion accordion" data-content="elite">
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">Экстерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">интерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">сиденья</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">свет и обзор</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">оборудование</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">безопасность</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">аудио и электронные системы</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">багажник и груз</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">колеса</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__accordion accordion" data-content="premium">
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">Экстерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">интерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">сиденья</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">свет и обзор</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">оборудование</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">безопасность</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">аудио и электронные системы</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">багажник и груз</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">колеса</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__accordion accordion" data-content="tech-plus">
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">Экстерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">интерьер</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">сиденья</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">свет и обзор</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">оборудование</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">безопасность </div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">аудио и электронные системы</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">багажник и груз</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head js-modal-accordion">
+                            <div class="accordion__title">колеса</div>
+                            <button class="accordion__btn">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li class="accordion__list-item">Окраска кузова металлик</li>
+                                <li class="accordion__list-item">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида, пластиковые накладки бампера, расширители колесных арок, юбка, спойлер</li>
+                                <li class="accordion__list-item">Окрашенные в цвет кузова ручки дверей</li>
+                                <li class="accordion__list-item">Укороченная антенна «акулий плавник»</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <button class="btn modal__btn js-fancy" data-src="#offer">Получить предложение</button>
+    </div>
+</div>
+
+    <div class="modal modal_services" id="test-drive">
+    <div class="modal__box">
+        <div class="modal__box-title">Записаться на тест-драйв</div>
+        <p class="modal__box-text">Пожалуйста, введите Ваш номер телефона</p>
+
+        <form class="modal__form">
+            <label class="modal__form-label">
+                <input type="tel" name="phone" class="modal__form-input js-phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="modal__form-label">
+                <select class="modal__form-select select js-select" name="dealer" data-placeholder="Дилерский центр" required>
+                    <option></option>
+                    <option value="Дилерский центр1">Дилерский центр1</option>
+                    <option value="Дилерский центр2">Дилерский центр2</option>
+                    <option value="Дилерский центр3">Дилерский центр3</option>
+                    <option value="Дилерский центр4">Дилерский центр4</option>
+                </select>
+            </label>
+
+            <label class="modal__form-label">
+                <input type="checkbox">
+                <span class="modal__form-mark">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#check-icon"></use>
+                    </svg>
+                </span>
+                <span class="modal__form-policy">Я даю согласен с <a href="#">условиями обработки</a> персональных данных.</span>
+            </label>
+
+            <button class="btn modal__form-btn">Записаться на сервис</button>
+        </form>
+    </div>
+</div>
+    
+</div>
+
+        <!-- 
+<link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+<link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+<link rel="stylesheet" href="./libs/select2/select2.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+
+
+
+<script src="./libs/jquery-3.5.1.min.js"></script>
+<script src="./libs/slick-1.8.1/slick.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script src="./libs/jquery.inputmask.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+<script src="js/main.js"></script> -->
+
+<script type="application/javascript">
+    const loader = (url, tag)=> {
+        return new Promise((resolve, reject)=> {
+            let element = null 
+            if (tag === 'script') {
+                element = document.createElement('script')
+                element.src = url
+            }
+
+            if (tag === 'link') {
+                element = document.createElement('link')
+                element.rel = 'stylesheet'
+                element.href = url
+            }
+            
+            element.addEventListener('load', ()=> {
+                resolve(element)
+            })
+            element.addEventListener('error', (err)=> {
+                reject(new Error(`Error load module ${url}`))
+            })
+            document.body.append(element)
+        }) 
+    }
+
+    window.loadModules = (mainScript)=> {
+        window.addEventListener('scroll', userEventsInit)
+
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+            window.addEventListener('touchstart', userEventsInit)
+        } else {
+            window.addEventListener('mousemove', userEventsInit)
+        }
+
+        function userEventsInit() {
+            window.removeEventListener('scroll', userEventsInit)
+            window.removeEventListener('mousemove', userEventsInit)
+            window.removeEventListener('touchstart', userEventsInit)
+
+            loader('./libs/slick-1.8.1/slick.css', 'link')
+                .then(()=> loader('./libs/slick-1.8.1/slick-theme.css', 'link'))
+                .then(()=> loader('./libs/slick-1.8.1/slick-theme.css', 'link'))
+                .then(()=> loader('./libs/select2/select2.min.css', 'link'))
+                .then(()=> loader('https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css', 'link'))
+                .then(()=> loader('./libs/jquery-3.5.1.min.js', 'script'))
+                .then(()=> loader('./libs/slick-1.8.1/slick.min.js', 'script'))
+                .then(()=> loader('./libs/select2/select2.min.js', 'script'))
+                .then(()=> loader('./libs/jquery.inputmask.min.js', 'script'))
+                .then(()=> loader('https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js', 'script'))
+                .then(()=> loader('https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&', 'script'))
+                .then(()=> loader(mainScript, 'script'))
+        }
+    }
+</script>
+
+
+    <script type="application/javascript">
+        window.loadModules('js/main.js')
+    </script>
+
+
+
+    </body>
+</html>
